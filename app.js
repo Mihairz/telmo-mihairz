@@ -32,7 +32,7 @@
 
     dotenv.config({path:'./.env'}); //PART3
 
-    const mysql = require('mysql');
+    const mysql = require('mysql'); 
 
     const db = mysql.createConnection({
         host: process.env.DATABASE_HOST,

@@ -6,6 +6,10 @@ router.get('/', authController.isLoggedIn, (req,res) => {
     res.render('index', {user:req.user} );
 });
 
+router.get('/index', authController.isLoggedIn, (req,res) => {
+    res.render('index', {user:req.user} );
+});
+
 router.get('/register', (req,res) => {
     res.render('register');
 });
