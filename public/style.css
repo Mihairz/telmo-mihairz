@@ -47,11 +47,12 @@ body.dark h1{
 
     #nav-logo{
         letter-spacing: 5px;
-        font-size:25px;
+        font-size:25px!important;
     }
     #nav-logo a{
         color: white;
         transition:all 0.5s;
+        text-decoration: none;
     }
     #nav-logo a:hover{
         color:#2f1735;
@@ -67,9 +68,10 @@ body.dark h1{
     }
     .nav-links a{
         font-weight: bold;
-        font-size: 18px;
+        font-size: 18px!important;
         color: white;
         transition: all .5s ;
+        text-decoration: none;
     }
     .nav-links a:hover{
         color:#2f1735;
@@ -284,155 +286,221 @@ footer {
 
 
 /*v--FORMULAR--v*/
-.loginform {
-  background-color: #15172b;
-  border-radius: 20px;
-  box-sizing: border-box;
-  height: 550px;
-  padding: 20px;
-  width: 700px;
-  display: inline-block;
-}
-
-.registerform {
+    .loginform {
     background-color: #15172b;
     border-radius: 20px;
     box-sizing: border-box;
-    height: 700px;
+    height: 550px;
     padding: 20px;
     width: 700px;
     display: inline-block;
-}
+    }
 
-.title {
-  color: #eee;
-  font-family: sans-serif;
-  font-size: 36px;
-  font-weight: 600;
-  margin-top: 30px;
-}
+    .registerform {
+        background-color: #15172b;
+        border-radius: 20px;
+        box-sizing: border-box;
+        height: 700px;
+        padding: 20px;
+        width: 700px;
+        display: inline-block;
+    }
 
-.subtitle {
-  color: #eee;
-  font-family: sans-serif;
-  font-size: 16px;
-  font-weight: 600;
-  margin-top: 10px;
-}
+    .title {
+    color: #eee;
+    font-family: sans-serif;
+    font-size: 36px;
+    font-weight: 600;
+    margin-top: 30px;
+    }
 
-.input-container {
-  height: 50px;
-  position: relative;
-  width: 100%;
-}
+    .subtitle {
+    color: #eee;
+    font-family: sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 10px;
+    }
 
-.ic1 {
-  margin-top: 40px;
-}
+    .input-container {
+    height: 50px;
+    position: relative;
+    width: 100%;
+    }
 
-.ic2 {
-  margin-top: 30px;
-}
+    .ic1 {
+    margin-top: 40px;
+    }
 
-.input {
-  background-color: #303245;
-  border-radius: 12px;
-  border: 0;
-  box-sizing: border-box;
-  color: #eee;
-  font-size: 18px;
-  height: 100%;
-  outline: 0;
-  padding: 4px 20px 0;
-  width: 100%;
-}
+    .ic2 {
+    margin-top: 30px;
+    }
 
-.cut {
-  background-color: #15172b;
-  border-radius: 10px;
-  height: 20px;
-  left: 20px;
-  position: absolute;
-  top: -20px;
-  transform: translateY(0);
-  transition: transform 200ms;
-  width: 76px;
-}
+    .input {
+    background-color: #303245;
+    border-radius: 12px;
+    border: 0;
+    box-sizing: border-box;
+    color: #eee;
+    font-size: 18px;
+    height: 100%;
+    outline: 0;
+    padding: 4px 20px 0;
+    width: 100%;
+    }
 
-.cut-short {
-  width: 50px;
-}
+    .cut {
+    background-color: #15172b;
+    border-radius: 10px;
+    height: 20px;
+    left: 20px;
+    position: absolute;
+    top: -20px;
+    transform: translateY(0);
+    transition: transform 200ms;
+    width: 76px;
+    }
 
-.input:focus ~ .cut,
-.input:not(:placeholder-shown) ~ .cut {
-  transform: translateY(8px);
-}
+    .cut-short {
+    width: 50px;
+    }
 
-.placeholder {
-  color: #65657b;
-  font-family: sans-serif;
-  left: 20px;
-  line-height: 14px;
-  pointer-events: none;
-  position: absolute;
-  transform-origin: 0 50%;
-  transition: transform 200ms, color 200ms;
-  top: 20px;
-}
+    .input:focus ~ .cut,
+    .input:not(:placeholder-shown) ~ .cut {
+    transform: translateY(8px);
+    }
 
-.input:focus ~ .placeholder,
-.input:not(:placeholder-shown) ~ .placeholder {
-  transform: translateY(-30px) translateX(10px) scale(0.75);
-}
+    .placeholder {
+    color: #65657b;
+    font-family: sans-serif;
+    left: 20px;
+    line-height: 14px;
+    pointer-events: none;
+    position: absolute;
+    transform-origin: 0 50%;
+    transition: transform 200ms, color 200ms;
+    top: 20px;
+    }
 
-.input:not(:placeholder-shown) ~ .placeholder {
-  color: #808097;
-}
+    .input:focus ~ .placeholder,
+    .input:not(:placeholder-shown) ~ .placeholder {
+    transform: translateY(-30px) translateX(10px) scale(0.75);
+    }
 
-.input:focus ~ .placeholder {
-  color: #dc2f55;
-}
+    .input:not(:placeholder-shown) ~ .placeholder {
+    color: #808097;
+    }
 
-.submit {
-  background-color: #08d;
-  border-radius: 12px;
-  border: 0;
-  box-sizing: border-box;
-  color: #eee;
-  cursor: pointer;
-  font-size: 18px;
-  height: 50px;
-  margin-top: 38px;
-  outline: 0;
-  text-align: center;
-  width: 100%;
-}
+    .input:focus ~ .placeholder {
+    color: #dc2f55;
+    }
 
-.submit:active {
-  background-color: #06b;
-}
-
-.formdiv{
-    align-items: center;
+    .submit {
+    background-color: #08d;
+    border-radius: 12px;
+    border: 0;
+    box-sizing: border-box;
+    color: #eee;
+    cursor: pointer;
+    font-size: 18px;
+    height: 50px;
+    margin-top: 38px;
+    outline: 0;
     text-align: center;
-}
+    width: 100%;
+    }
 
-.registerdiv{
-    align-items: center;
-    text-align: center;
-}
+    .submit:active {
+    background-color: #06b;
+    }
 
-.error-message{
-    color:white;
-}
+    .formdiv{
+        align-items: center;
+        text-align: center;
+    }
 
-.register-link{
-    color:white;
-    text-decoration: none;
-}
+    .registerdiv{
+        align-items: center;
+        text-align: center;
+    }
 
-.login-link{
-    color:white;
-    text-decoration: none;
-}
+    .error-message{
+        color:white;
+    }
+
+    .register-link{
+        color:white;
+        text-decoration: none;
+    }
+
+    .login-link{
+        color:white;
+        text-decoration: none;
+    }
 /*^--FORMULAR--^*/
+
+/*v--PROFILE--v*/
+    .main-body {
+        padding: 15px;
+        margin-top:50px;
+    }
+    .card {
+        box-shadow: 0 1px 3px 0 rgba(0,0,0,.1), 0 1px 2px 0 rgba(0,0,0,.06);
+    }
+
+    .card {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        min-width: 0;
+        word-wrap: break-word;
+        background-color: #fff;
+        background-clip: border-box;
+        border: 0 solid rgba(0,0,0,.125);
+        border-radius: .25rem;
+    }
+
+    .card-body {
+        flex: 1 1 auto;
+        min-height: 1px;
+        padding: 1rem;
+    }
+
+    .gutters-sm {
+        margin-right: -8px;
+        margin-left: -8px;
+    }
+
+    .gutters-sm>.col, .gutters-sm>[class*=col-] {
+        padding-right: 8px;
+        padding-left: 8px;
+    }
+    .mb-3, .my-3 {
+        margin-bottom: 1rem!important;
+    }
+
+    .bg-gray-300 {
+        background-color: #e2e8f0;
+    }
+    .h-100 {
+        height: 100%!important;
+    }
+    .shadow-none {
+        box-shadow: none!important;
+    }
+
+    .unu{
+        margin-bottom: 300px;
+        width:25%;
+    }
+
+/*^--PROFILE--^*/
+
+.logout-button{
+    background-color: red;
+    color: white;
+    text-decoration: none;
+    width: 100px;
+    height: 50px;
+    text-align: center;
+}

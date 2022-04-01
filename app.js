@@ -15,7 +15,7 @@
     // Parse JSON bodies (as sent by API clients) PART5
     app.use(express.json()); 
 
-    app.use(cookieParser());//PART7
+    app.use(cookieParser());//PART7 
     
     //Define Routes
     app.use('/', require('./routes/pages')); //PART5
