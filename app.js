@@ -43,6 +43,13 @@ app.use('/', require('./routes/pages'));
 app.use('/auth', require('./routes/auth'));
 
 
+
+
+
+
+
+
+
 app.listen(port=5000, ()=> {
     console.log("Server started on port "+port);
 })
